@@ -1,6 +1,6 @@
 # Tutorial Women Who Go POA
 
-Seja bem-vinda ao tutorial do Women Who Go Porto Alegre!
+Seja bem-vinda ao tutorial do Women Who Go Rio de Janeiro!
 
 O objetivo deste tutorial é mostrar que programação não é uma coisa de outro mundo e pode ser muito divertido. Nosso objetivo é construir um jogo do zero, utilizando a linguagem de programação Go.
 
@@ -25,8 +25,8 @@ Você vai terminar esta etapa com:
 Nota: para programação nós não utilizamos editores que formatam texto (por exemplo, Microsoft Word), nós usamos os editores de texto simples (em inglês *plain-text*).
 
 Sugestões de editores de texto:
-- MacOS: atom
-- Linux: gedit
+- MacOS: [Atom](https://atom.io/)
+- Linux: [Gedit](https://wiki.gnome.org/Apps/Gedit)
 - Windows: Notepad++
 
 ### Instalação do Go
