@@ -1,4 +1,5 @@
-# Tutorial Women Who Go POA
+# Tutorial Women Who Go Rio de Janeiro
+------------------------------------------
 
 Seja bem-vinda ao tutorial do Women Who Go Rio de Janeiro!
 
@@ -10,6 +11,8 @@ Assim como uma língua humana, você não precisa saber tudo de uma linguagem de
 
 Neste tutorial faremos o possível para explicar os principais elementos da linguagem Go, porém não se sinta mal se não entender tudo neste primeiro contato. O mais importante é entender a idéia geral e é claro, se você estiver participando de um evento presencial, não hesite em pedir ajuda para as nossas *coaches*! :)
 
+------------------------------------------
+
 ## Passo 01: Preparar o ambiente
 
 No primeiro passo nós vamos preparar o ambiente de desenvolvimento e criar um primeiro programa executável para testar se tudo está funcionando corretamente.
@@ -18,9 +21,10 @@ Você vai precisar de:
 - Um computador com acesso à internet
 
 Você vai terminar esta etapa com:
-- Uma instalação do Go funcionando
-- Um editor de texto simples com o qual você se sinta confortável
-- Um programa em Go que escreve "Hello Go!" na tela
+- Uma instalação do Go funcionando.
+- Uma conta no [GitHub](https://github.com) e o Git devidamente configurado em seu computador.
+- Um editor de texto simples com o qual você se sinta confortável.
+- Um programa em Go que escreve "Hello Go!" na tela.
 
 Nota: para programação nós não utilizamos editores que formatam texto (por exemplo, Microsoft Word), nós usamos os editores de texto simples (em inglês *plain-text*).
 
@@ -30,9 +34,9 @@ Nota: para programação nós não utilizamos editores que formatam texto (por e
 - [Notepad++](https://notepad-plus-plus.org/download/v7.4.2.html)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
-### Instalação do Go
+### Instalando Go
 
-#### Instalação MacOS
+#### Instalação no MacOS
 
 Temos duas opções de como instalar o Go no MacOS: usando Homebrew ou o instalador de pacotes do MacOS.
 
@@ -46,7 +50,7 @@ O jeito mais simples de instalar o Go é usando o [Homebrew](https://brew.sh/), 
 
 O próprio script de intalação do Homebrew explica o que esta fazendo e pausa quando necessário.
 
-##### Instalando Go
+##### Instalação do Go
 
 Caso você tenha instalado o Homebrew, basta rodar:
 
@@ -65,7 +69,7 @@ Para garantir que a instalação foi bem sucedida e que o Go foi instalado corre
 go version go1.8.1 darwin/amd64
 ```
 
-#### Instalação Linux
+#### Instalação no Linux
 
 ##### Instalando Go
 
@@ -103,21 +107,7 @@ ubuntu@svartir-sandar:~$ go version
 go version go1.8.1 linux/amd64
 ```
 
-#### Instalação Windows
-
-##### Instalando Git
-
-O primeiro passo é instalar o Git. O jeito mais fácil é fazer o download do [Git For Windows](https://git-for-windows.github.io/). A vantagem de utilizar o Git For Windows é que também será instalado o Git Bash. No caso desse tutorial, faremos os personagens do jogo usando caracteres Unicode. Infelizmente, o prompt de comando do Windows não consegue exibir os caracteres Unicode, então para esse tutorial usaremos o Git Bash que suporta esses caracteres.
-
-Para instalar o Git For Windows basta clicar no link acima e então em Download. Siga os passos da instalação normalmente até chegar na tela de seleção de componentes. Nessa tela é muito importante selecionar a opção "Use a TrueType font in all console windows". É essa opção que vai fazer com que os caracteres Unicode sejam exibidos corretamente.
-
-![Tela de seleção de componentes do instalador do Git For Windows.](./img/git_bash_setup_unicode.png)
-
-Continue seguindo as instruções de instalação até a tela de configuração do emulador de terminal que será utilizado pelo Git Bash. Nessa tela selecione a opção "Use MinTTY (the default terminal of MSYS2)". Juntamente com a opção selecionada anteriormente, essa opção também garantirá a exibição correta dos carcteres Unicode.
-
-![Tela de seleção do emulador de terminal do instalador do Git For Windows.](./img/git_bash_setup_unicode_2.png)
-
-Após essa tela continue seguindo as instruções do instalador até que o Git For Windows seja instalado. Ao fim da instalação abra o Git Bash.
+#### Instalação no Windows
 
 ##### Instalando Go
 
@@ -131,6 +121,26 @@ Para garantir que a instalação foi bem sucedida e que o Go foi instalado corre
 C:\Users\Camila\Documents\GitHub> go version
 go version go1.8.1 windows/amd64
 ```
+
+### Instalação do Git
+
+###### Antes de tudo, precisamos criar uma conta no [GitHub](https://github.com). 
+
+#### Instalando o Git.
+
+O primeiro passo é instalar o Git. O jeito mais fácil é fazer o download do [Git](https://git-scm.com/downloads) para o seu sistema operacional, **Lembrando que o Linux e o Mac, já pode estar instalado.**. 
+
+No caso do **Windows** temos vantagem de utilizar o Git Bash. No caso desse tutorial, faremos os personagens do jogo usando caracteres Unicode. Infelizmente, o prompt de comando do Windows não consegue exibir os caracteres Unicode, então para esse tutorial usaremos o Git Bash que suporta esses caracteres.
+
+Para ajudar a instalar o Git no Windows siga os passos da instalação normalmente até chegar na tela de seleção de componentes. Nessa tela é muito importante selecionar a opção "Use a TrueType font in all console windows". É essa opção que vai fazer com que os caracteres Unicode sejam exibidos corretamente.
+
+![Tela de seleção de componentes do instalador do Git For Windows.](./img/git_bash_setup_unicode.png)
+
+Continue seguindo as instruções de instalação até a tela de configuração do emulador de terminal que será utilizado pelo Git Bash. Nessa tela selecione a opção "Use MinTTY (the default terminal of MSYS2)". Juntamente com a opção selecionada anteriormente, essa opção também garantirá a exibição correta dos carcteres Unicode.
+
+![Tela de seleção do emulador de terminal do instalador do Git For Windows.](./img/git_bash_setup_unicode_2.png)
+
+Após essa tela continue seguindo as instruções do instalador até que o Git For Windows seja instalado. Ao fim da instalação abra o Git Bash.
 
 ### Configurando o Workspace do Go
 
@@ -968,3 +978,6 @@ _TODO_
 ## Passo 15: Adicionar suporte a novos mapas
 
 _TODO_
+
+
+########### Esse tutorial é uma adaptação livre ao tutorial do [Women Who Go POA](https://github.com/wwg-poa/pacgo)
