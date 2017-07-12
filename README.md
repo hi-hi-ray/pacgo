@@ -1,5 +1,4 @@
 # Tutorial Women Who Go Rio de Janeiro
-------------------------------------------
 
 Seja bem-vinda ao tutorial do Women Who Go Rio de Janeiro!
 
