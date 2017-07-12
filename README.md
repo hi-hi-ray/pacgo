@@ -25,9 +25,8 @@ Você vai terminar esta etapa com:
 Nota: para programação nós não utilizamos editores que formatam texto (por exemplo, Microsoft Word), nós usamos os editores de texto simples (em inglês *plain-text*).
 
 Sugestões de editores de texto:
-- MacOS: [Atom](https://atom.io/)
+- MacOS ou Windows: [Atom](https://atom.io/)
 - Linux: [Gedit](https://wiki.gnome.org/Apps/Gedit)
-- Windows: Notepad++
 
 ### Instalação do Go
 
