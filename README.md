@@ -243,12 +243,12 @@ Como estamos emprestando a idéia do PacGo de um jogo clássico, vamos pular est
 Digite no seu terminal o seguinte comando:
 
 ```
-go get github.com/wwg-poa/tutorial
+go get github.com/hi-hi-ray/pacgo
 ```
 
 Ele vai baixar automaticamente para você os arquivos iniciais deste projeto.
 
-Vá para a pasta `$GOHOME/src/github.com/wwg-poa/tutorial` e abra o arquivo `main.go` no seu editor de textos. Você deve ver o código abaixo:
+Vá para a pasta `$GOHOME/src/hi-hi-ray/pacgo` e abra o arquivo `main.go` no seu editor de textos. Você deve ver o código abaixo:
 
 
 ```
@@ -282,6 +282,9 @@ func main() {
 ```
 
 Salve o arquivo. (Lembre-se sempre de salvar o arquivo após cada alteração!)
+
+
+
 
 **_Coach_: explicar o que são comentários, a função `main` e o que é um _loop_.**
 
