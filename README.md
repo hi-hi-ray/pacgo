@@ -281,16 +281,26 @@ func main() {
 }
 ```
 
-Salve o arquivo. (Lembre-se sempre de salvar o arquivo após cada alteração!)
+// -> Tem como função comentar algo no seu código, os comentários, não aparecem em lugar nenhum, somente no seu código.
 
+Um código pode ter vários tipos de estruturas dentro dela e a que é citada no comentário do código é o Loop, essa estrutura é conhecida como estrutura de repetição, ou seja, ele irá executar o que está dentro dela até você dizer para ela parar, seja encerrando o programa ou criando uma forma de reconhecimento interno para ela saber que tem que parar... Como se fosse uma Safe Word, no caso do exemplo potamos *break*. 
 
-
-
-**_Coach_: explicar o que são comentários, a função `main` e o que é um _loop_.**
+O gif abaixo pode ilustrar como essas estruturas de repetição funciona.
+[![Loop While Gif](https://blog.penjee.com/wp-content/uploads/2015/04/top-5-programming-animated-gifs_demonstration-of-while-loop-animation_logo.gif)]
 
 Note que o nosso programa não faz nada diferente do programa anterior. Porém, nós incluimos alguns comentários com o objetivo de preparar o terreno para as próximas etapas e um _loop_ `for` para ser o nosso _loop_ principal do jogo.
 
 Além disso, logo no começo a função `main` incluímos as chamadas para as funções `Inicializa` e `Finaliza`. O objetivo destas funções é preparar o terminal para que ele entenda corretamente as instruções de impressão e os comandos do teclado, e restaurar ele para o modo anterior quando acabarmos (a palavra chave `defer` diz para o Go executar a função `Finaliza` por último).
+
+O código que faz isto é este aqui:
+
+```
+// Inicializar terminal
+Inicializa()
+defer Finaliza() // executa no final da função
+```
+
+Note que não definimos estas funções neste arquivo, elas foram definidas para você no arquivo `utils.go`. O entendimento destas funções não é necessário para este tutorial, mas caso fique curiosa fique a vontade para explorar este arquivo.
 
 O código que faz isto é este aqui:
 
