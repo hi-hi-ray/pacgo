@@ -286,7 +286,7 @@ func main() {
 Um código pode ter vários tipos de estruturas dentro dela e a que é citada no comentário do código é o Loop, essa estrutura é conhecida como estrutura de repetição, ou seja, ele irá executar o que está dentro dela até você dizer para ela parar, seja encerrando o programa ou criando uma forma de reconhecimento interno para ela saber que tem que parar... Como se fosse uma Safe Word, no caso do exemplo potamos *break*. 
 
 O gif abaixo pode ilustrar como essas estruturas de repetição funciona.
-[![Loop While Gif](https://blog.penjee.com/wp-content/uploads/2015/04/top-5-programming-animated-gifs_demonstration-of-while-loop-animation_logo.gif)]
+![Loop While Gif](https://blog.penjee.com/wp-content/uploads/2015/04/top-5-programming-animated-gifs_demonstration-of-while-loop-animation_logo.gif)
 
 Note que o nosso programa não faz nada diferente do programa anterior. Porém, nós incluimos alguns comentários com o objetivo de preparar o terreno para as próximas etapas e um _loop_ `for` para ser o nosso _loop_ principal do jogo.
 
