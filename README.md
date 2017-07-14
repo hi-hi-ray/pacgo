@@ -177,7 +177,7 @@ Nós costumamos fazer isso porque geralmente é bem simples de fazer e nos ajuda
 
 Então vamos fazer o mesmo para a linguagem Go.
 
-**_Coach_: explicar resumidamente o que é terminal e pasta, se necessário.**
+Se quiser saber uma breve explicação sobre o que seria o terminal e um pasta, fique a vontade para perguntar ao seu coach 
 
 Primeiro, crie uma pasta no seu computador onde você vai guardar os códigos que escrever. Você pode dar qualquer nome para ela, mas de preferência sem acentos ou espaços. Por exemplo: `tutorial`.
 
@@ -323,8 +323,6 @@ Resumidamente, para fazer um jogo nós precisamos nos preocupar com os seguintes
   - Processar o movimento dos fantasmas
   - Processar colisões, o que quer dizer, verificar se o jogador bateu em algum fantasma
 
-**_Coach_: explicar o papel de cada uma dessas etapas para a construção do jogo.**
-
 Todos estes passos estão anotados no código do programa por meio dos comentários.
 
 Digite no terminal o comando `go build` para criar o programa `pacgo`. Você pode executar o programa que acabou de criar com o comando `./pacgo` (em Linux ou MacOS), ou com o comando `pacgo` (em Windows).
@@ -335,7 +333,7 @@ Ao executar o `pacgo` você vai reparar que o programa parece ter **travado** o 
 
 A nossa primeira tarefa de codificação vai ser desenhar um labirinto na tela.
 
-**_Coach_: explique em poucas palavras o que é um _import_ e o que são bibliotecas.**
+O import serve para importamos, pacotes para utlizarmos no nosso código. Esse pacotes podem ser bibliotecas ou um outro pedaço do código qual você escreveu.
 
 Nós vamos criar uma representação do labirinto no programa. Para isso vamos utilizar uma `struct`. As _structs_ são a nossa forma de dizer que uma coisa possui várias partes, ou "propriedades". No caso, o nosso labirinto possui uma `largura`, uma `altura` e um `mapa`.
 
