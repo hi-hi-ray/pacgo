@@ -292,14 +292,6 @@ Note que o nosso programa não faz nada diferente do programa anterior. Porém, 
 
 Além disso, logo no começo a função `main` incluímos as chamadas para as funções `Inicializa` e `Finaliza`. O objetivo destas funções é preparar o terminal para que ele entenda corretamente as instruções de impressão e os comandos do teclado, e restaurar ele para o modo anterior quando acabarmos (a palavra chave `defer` diz para o Go executar a função `Finaliza` por último).
 
-O código que faz isto é este aqui:
-
-```
-// Inicializar terminal
-Inicializa()
-defer Finaliza() // executa no final da função
-```
-
 Note que não definimos estas funções neste arquivo, elas foram definidas para você no arquivo `utils.go`. O entendimento destas funções não é necessário para este tutorial, mas caso fique curiosa fique a vontade para explorar este arquivo.
 
 O código que faz isto é este aqui:
@@ -348,9 +340,6 @@ type Labirinto struct {
 
 var labirinto Labirinto
 ```
-
-**_Coach_: explicar a diferença entre declaração e definição.**
-
 Vamos criar as funções para construir o labirinto e desenhá-lo na tela. Coloque o código abaixo após a linha `var labirinto Labirinto`:
 
 ```
@@ -379,8 +368,6 @@ func desenhaTela() {
   }
 }
 ```
-
-**_Coach_: explicar a diferença entre declaração de função e chamada de função.**
 
 No mapa, o caractere `#` representa as nossas paredes. A letra `G` representa a posição inicial do nosso personagem (o PacGo) e o `F` representa a posição inicial de um fantasma.
 
@@ -507,8 +494,6 @@ Isto acontece porque a cada passo do _loop_ o computador fica esperando você pr
 Primeiro, vamos fazer a tela ser impressa corretamente.
 
 ## Passo 05: Corrigindo a animação
-
-**_Coach_: explicar como funciona o sistema de coordenadas da tela.**
 
 Altere a função `desenhaTela()` para incluir uma chamada para `LimpaTela()` antes de imprimir o mapa:
 
