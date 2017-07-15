@@ -3,25 +3,25 @@ package main
 import "fmt"
 
 func main() {
-  // Inicializar terminal
-  Inicializa()
-  defer Finaliza()
+	// Inicializar terminal
+	inicializa()
+	defer finaliza()
 
-  // Inicializar labirinto
+	// Inicializar labirinto
 
-  // Loop principal
-  for {
-    // Desenha tela
+	// Loop principal
+	for {
+		// Desenha tela
 
-    // Processa entrada do jogador
+		// Processa entrada do jogador
 
-    // Processa movimento dos fantasmas
+		// Processa movimento dos fantasmas
 
-    // Processa colisões
+		// Processa colisões
 
-    // Dorme
+		// Dorme
 
-    fmt.Println("Olá Go!")
-    break // Temporário: quebra o loop infinito
-  }
+		fmt.Println("Olá Go!")
+		break // Temporário: quebra o loop infinito
+	}
 }
