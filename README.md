@@ -1,6 +1,6 @@
-# Tutorial Women Who Go POA
+# Tutorial Women Who Go Rio de Janeiro
 
-Seja bem-vinda ao tutorial do Women Who Go Porto Alegre!
+Seja bem-vinda ao tutorial do Women Who Go Rio de Janeiro!
 
 O objetivo deste tutorial é mostrar que programação não é uma coisa de outro mundo e pode ser muito divertido. Nosso objetivo é construir um jogo do zero, utilizando a linguagem de programação Go.
 
@@ -10,6 +10,8 @@ Assim como uma língua humana, você não precisa saber tudo de uma linguagem de
 
 Neste tutorial faremos o possível para explicar os principais elementos da linguagem Go, porém não se sinta mal se não entender tudo neste primeiro contato. O mais importante é entender a idéia geral e é claro, se você estiver participando de um evento presencial, não hesite em pedir ajuda para as nossas *coaches*! :)
 
+------------------------------------------
+
 ## Passo 01: Preparar o ambiente
 
 No primeiro passo nós vamos preparar o ambiente de desenvolvimento e criar um primeiro programa executável para testar se tudo está funcionando corretamente.
@@ -18,20 +20,22 @@ Você vai precisar de:
 - Um computador com acesso à internet
 
 Você vai terminar esta etapa com:
-- Uma instalação do Go funcionando
-- Um editor de texto simples com o qual você se sinta confortável
-- Um programa em Go que escreve "Hello Go!" na tela
+- Uma instalação do Go funcionando.
+- Uma conta no [GitHub](https://github.com) e o Git devidamente configurado em seu computador.
+- Um editor de texto simples com o qual você se sinta confortável.
+- Um programa em Go que escreve "Hello Go!" na tela.
 
 Nota: para programação nós não utilizamos editores que formatam texto (por exemplo, Microsoft Word), nós usamos os editores de texto simples (em inglês *plain-text*).
 
-Sugestões de editores de texto:
-- MacOS: atom
-- Linux: gedit
-- Windows: Notepad++
+##### Sugestões de editores de texto:
+- [Atom](https://atom.io/)
+- [Sublime](https://www.sublimetext.com/)
+- [Notepad++](https://notepad-plus-plus.org/download/v7.4.2.html)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
-### Instalação do Go
+### Instalando Go
 
-#### Instalação MacOS
+#### Instalação no MacOS
 
 Temos duas opções de como instalar o Go no MacOS: usando Homebrew ou o instalador de pacotes do MacOS.
 
@@ -45,7 +49,7 @@ O jeito mais simples de instalar o Go é usando o [Homebrew](https://brew.sh/), 
 
 O próprio script de intalação do Homebrew explica o que esta fazendo e pausa quando necessário.
 
-##### Instalando Go
+##### Instalação do Go
 
 Caso você tenha instalado o Homebrew, basta rodar:
 
@@ -64,7 +68,7 @@ Para garantir que a instalação foi bem sucedida e que o Go foi instalado corre
 go version go1.8.1 darwin/amd64
 ```
 
-#### Instalação Linux
+#### Instalação no Linux
 
 ##### Instalando Go
 
@@ -102,21 +106,7 @@ ubuntu@svartir-sandar:~$ go version
 go version go1.8.1 linux/amd64
 ```
 
-#### Instalação Windows
-
-##### Instalando Git
-
-O primeiro passo é instalar o Git. O jeito mais fácil é fazer o download do [Git For Windows](https://git-for-windows.github.io/). A vantagem de utilizar o Git For Windows é que também será instalado o Git Bash. No caso desse tutorial, faremos os personagens do jogo usando caracteres Unicode. Infelizmente, o prompt de comando do Windows não consegue exibir os caracteres Unicode, então para esse tutorial usaremos o Git Bash que suporta esses caracteres.
-
-Para instalar o Git For Windows basta clicar no link acima e então em Download. Siga os passos da instalação normalmente até chegar na tela de seleção de componentes. Nessa tela é muito importante selecionar a opção "Use a TrueType font in all console windows". É essa opção que vai fazer com que os caracteres Unicode sejam exibidos corretamente.
-
-![Tela de seleção de componentes do instalador do Git For Windows.](./img/git_bash_setup_unicode.png)
-
-Continue seguindo as instruções de instalação até a tela de configuração do emulador de terminal que será utilizado pelo Git Bash. Nessa tela selecione a opção "Use MinTTY (the default terminal of MSYS2)". Juntamente com a opção selecionada anteriormente, essa opção também garantirá a exibição correta dos carcteres Unicode.
-
-![Tela de seleção do emulador de terminal do instalador do Git For Windows.](./img/git_bash_setup_unicode_2.png)
-
-Após essa tela continue seguindo as instruções do instalador até que o Git For Windows seja instalado. Ao fim da instalação abra o Git Bash.
+#### Instalação no Windows
 
 ##### Instalando Go
 
@@ -130,6 +120,26 @@ Para garantir que a instalação foi bem sucedida e que o Go foi instalado corre
 C:\Users\Camila\Documents\GitHub> go version
 go version go1.8.1 windows/amd64
 ```
+
+### Instalação do Git
+
+###### Antes de tudo, precisamos criar uma conta no [GitHub](https://github.com). 
+
+#### Instalando o Git.
+
+O primeiro passo é instalar o Git. O jeito mais fácil é fazer o download do [Git](https://git-scm.com/downloads) para o seu sistema operacional, **Lembrando que o Linux e o Mac, já pode estar instalado.**. 
+
+No caso do **Windows** temos vantagem de utilizar o Git Bash. No caso desse tutorial, faremos os personagens do jogo usando caracteres Unicode. Infelizmente, o prompt de comando do Windows não consegue exibir os caracteres Unicode, então para esse tutorial usaremos o Git Bash que suporta esses caracteres.
+
+Para ajudar a instalar o Git no Windows siga os passos da instalação normalmente até chegar na tela de seleção de componentes. Nessa tela é muito importante selecionar a opção "Use a TrueType font in all console windows". É essa opção que vai fazer com que os caracteres Unicode sejam exibidos corretamente.
+
+![Tela de seleção de componentes do instalador do Git For Windows.](./img/git_bash_setup_unicode.png)
+
+Continue seguindo as instruções de instalação até a tela de configuração do emulador de terminal que será utilizado pelo Git Bash. Nessa tela selecione a opção "Use MinTTY (the default terminal of MSYS2)". Juntamente com a opção selecionada anteriormente, essa opção também garantirá a exibição correta dos carcteres Unicode.
+
+![Tela de seleção do emulador de terminal do instalador do Git For Windows.](./img/git_bash_setup_unicode_2.png)
+
+Após essa tela continue seguindo as instruções do instalador até que o Git For Windows seja instalado. Ao fim da instalação abra o Git Bash.
 
 ### Configurando o Workspace do Go
 
@@ -167,7 +177,7 @@ Nós costumamos fazer isso porque geralmente é bem simples de fazer e nos ajuda
 
 Então vamos fazer o mesmo para a linguagem Go.
 
-**_Coach_: explicar resumidamente o que é terminal e pasta, se necessário.**
+Se quiser saber uma breve explicação sobre o que seria o terminal e um pasta, fique a vontade para perguntar ao seu coach 
 
 Primeiro, crie uma pasta no seu computador onde você vai guardar os códigos que escrever. Você pode dar qualquer nome para ela, mas de preferência sem acentos ou espaços. Por exemplo: `tutorial`.
 
@@ -228,17 +238,15 @@ O primeiro passo no desenvolvimento de um jogo é o chamado _game design_, que �
 
 Como estamos emprestando a idéia do PacGo de um jogo clássico, vamos pular esta etapa e partir direto para a codificação.
 
-**_Coach_: explicar brevemente o jogo Pac Man observando os aspectos de _game design_**
-
 Digite no seu terminal o seguinte comando:
 
 ```
-go get github.com/wwg-poa/tutorial
+go get github.com/hi-hi-ray/pacgo
 ```
 
 Ele vai baixar automaticamente para você os arquivos iniciais deste projeto.
 
-Vá para a pasta `$GOHOME/src/github.com/wwg-poa/tutorial` e abra o arquivo `main.go` no seu editor de textos. Você deve ver o código abaixo:
+Vá para a pasta `$GOHOME/src/hi-hi-ray/pacgo` e abra o arquivo `main.go` no seu editor de textos. Você deve ver o código abaixo:
 
 
 ```
@@ -282,6 +290,8 @@ Note que o nosso programa não faz nada diferente do programa anterior. Porém, 
 
 Além disso, logo no começo a função `main` incluímos as chamadas para as funções `Inicializa` e `Finaliza`. O objetivo destas funções é preparar o terminal para que ele entenda corretamente as instruções de impressão e os comandos do teclado, e restaurar ele para o modo anterior quando acabarmos (a palavra chave `defer` diz para o Go executar a função `Finaliza` por último).
 
+Note que não definimos estas funções neste arquivo, elas foram definidas para você no arquivo `utils.go`. O entendimento destas funções não é necessário para este tutorial, mas caso fique curiosa fique a vontade para explorar este arquivo.
+
 O código que faz isto é este aqui:
 
 ```
@@ -303,8 +313,6 @@ Resumidamente, para fazer um jogo nós precisamos nos preocupar com os seguintes
   - Processar o movimento dos fantasmas
   - Processar colisões, o que quer dizer, verificar se o jogador bateu em algum fantasma
 
-**_Coach_: explicar o papel de cada uma dessas etapas para a construção do jogo.**
-
 Todos estes passos estão anotados no código do programa por meio dos comentários.
 
 Digite no terminal o comando `go build` para criar o programa `pacgo`. Você pode executar o programa que acabou de criar com o comando `./pacgo` (em Linux ou MacOS), ou com o comando `pacgo` (em Windows).
@@ -315,7 +323,7 @@ Ao executar o `pacgo` você vai reparar que o programa parece ter **travado** o 
 
 A nossa primeira tarefa de codificação vai ser desenhar um labirinto na tela.
 
-**_Coach_: explique em poucas palavras o que é um _import_ e o que são bibliotecas.**
+O import serve para importamos, pacotes para utlizarmos no nosso código. Esse pacotes podem ser bibliotecas ou um outro pedaço do código qual você escreveu.
 
 Nós vamos criar uma representação do labirinto no programa. Para isso vamos utilizar uma `struct`. As _structs_ são a nossa forma de dizer que uma coisa possui várias partes, ou "propriedades". No caso, o nosso labirinto possui uma `largura`, uma `altura` e um `mapa`.
 
@@ -330,9 +338,6 @@ type Labirinto struct {
 
 var labirinto Labirinto
 ```
-
-**_Coach_: explicar a diferença entre declaração e definição.**
-
 Vamos criar as funções para construir o labirinto e desenhá-lo na tela. Coloque o código abaixo após a linha `var labirinto Labirinto`:
 
 ```
@@ -361,8 +366,6 @@ func desenhaTela() {
   }
 }
 ```
-
-**_Coach_: explicar a diferença entre declaração de função e chamada de função.**
 
 No mapa, o caractere `#` representa as nossas paredes. A letra `G` representa a posição inicial do nosso personagem (o PacGo) e o `F` representa a posição inicial de um fantasma.
 
@@ -489,8 +492,6 @@ Isto acontece porque a cada passo do _loop_ o computador fica esperando você pr
 Primeiro, vamos fazer a tela ser impressa corretamente.
 
 ## Passo 05: Corrigindo a animação
-
-**_Coach_: explicar como funciona o sistema de coordenadas da tela.**
 
 Altere a função `desenhaTela()` para incluir uma chamada para `LimpaTela()` antes de imprimir o mapa:
 
@@ -643,7 +644,6 @@ func desenhaTela() {
   MoveCursor(Posicao{labirinto.altura + 2, 0})
 }
 ```
-**_Coach_: comentar o impacto das mudanças na função desenhaTela.**
 
 Compile o programa e execute-o. Você deve reparar que as setas movem o `G` na tela. Estamos fazendo progresso!
 
@@ -661,8 +661,6 @@ type Fantasma struct {
 ```
 
 Assim como para o PacGo a estrutura acima só define a "receita" para construir o fantasma. Precisamos também criar os fantasmas propriamente ditos. Como podem existir mais de um fantasma, ao invés de declarar um único objeto fantasma vamos declarar um _array_ de fantasmas.
-
-**_Coach_: explicar o que é um _array_.**
 
 Copie e cole o código abaixo da definição do PacGo:
 
@@ -762,11 +760,7 @@ Experimente adicionar mais um fantasma no mapa para ver o que acontece.
 
 ## Passo 08: Corrigindo o movimento
 
-**_Coach_: Explicar porque o movimento dos fantasmas só ocorre após pressionar uma tecla.**
-
 Você deve ter reparado na seção anterior que o nosso jogo "trava" esperando o usuário pressionar uma tecla. Num jogo de verdade é esperado que o movimento dos inimigos seja independente do movimento do jogador. Nós precisamos separar o código que lê as teclas pressionadas pelo usuário do código do _loop_ principal.
-
-**_Coach_: Explicar brevemente os conceitos de _goroutine_ e _canais_.**
 
 Para conseguir este objetivo, vamos utilizar o conceito de `goroutines` e canais (`channels`). A função de uma _goroutine_ é justamente executar um código separado do código principal.
 
@@ -970,3 +964,6 @@ _TODO_
 ## Passo 15: Adicionar suporte a novos mapas
 
 _TODO_
+
+
+###### Esse tutorial é uma adaptação livre ao tutorial do [Women Who Go POA](https://github.com/wwg-poa/pacgo)
