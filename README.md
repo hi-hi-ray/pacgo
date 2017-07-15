@@ -238,8 +238,6 @@ O primeiro passo no desenvolvimento de um jogo é o chamado _game design_, que �
 
 Como estamos emprestando a idéia do PacGo de um jogo clássico, vamos pular esta etapa e partir direto para a codificação.
 
-**_Coach_: explicar brevemente o jogo Pac Man observando os aspectos de _game design_**
-
 Digite no seu terminal o seguinte comando:
 
 ```
@@ -646,7 +644,6 @@ func desenhaTela() {
   MoveCursor(Posicao{labirinto.altura + 2, 0})
 }
 ```
-**_Coach_: comentar o impacto das mudanças na função desenhaTela.**
 
 Compile o programa e execute-o. Você deve reparar que as setas movem o `G` na tela. Estamos fazendo progresso!
 
@@ -664,8 +661,6 @@ type Fantasma struct {
 ```
 
 Assim como para o PacGo a estrutura acima só define a "receita" para construir o fantasma. Precisamos também criar os fantasmas propriamente ditos. Como podem existir mais de um fantasma, ao invés de declarar um único objeto fantasma vamos declarar um _array_ de fantasmas.
-
-**_Coach_: explicar o que é um _array_.**
 
 Copie e cole o código abaixo da definição do PacGo:
 
@@ -765,11 +760,7 @@ Experimente adicionar mais um fantasma no mapa para ver o que acontece.
 
 ## Passo 08: Corrigindo o movimento
 
-**_Coach_: Explicar porque o movimento dos fantasmas só ocorre após pressionar uma tecla.**
-
 Você deve ter reparado na seção anterior que o nosso jogo "trava" esperando o usuário pressionar uma tecla. Num jogo de verdade é esperado que o movimento dos inimigos seja independente do movimento do jogador. Nós precisamos separar o código que lê as teclas pressionadas pelo usuário do código do _loop_ principal.
-
-**_Coach_: Explicar brevemente os conceitos de _goroutine_ e _canais_.**
 
 Para conseguir este objetivo, vamos utilizar o conceito de `goroutines` e canais (`channels`). A função de uma _goroutine_ é justamente executar um código separado do código principal.
 
